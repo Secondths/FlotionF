@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Deteksi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Deteksi Bunga</h1>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename=img_path) }}" alt="Uploaded Image" class="result-image">
+        </div>
+        <p><strong>KNN Prediction:</strong> {{ knn_label }}</p>
+        <p><strong>CNN Prediction:</strong> {{ cnn_label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+        <h2>Confusion Matrix</h2>
+        <div class="cm-container">
+            <img src="{{ url_for('static', filename=cm_path) }}" alt="Confusion Matrix">
+        </div>
+        <a href="/">Kembali</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* upload.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.upload-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.upload-form input[type="file"] {
+    border: 2px solid #3498db;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #34495e;
+}
+
+.upload-form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* Menambahkan jarak di atas tombol submit */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah tombol submit */
+}
+
+.upload-form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+.footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

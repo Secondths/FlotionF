@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}"> <!-- Link ke file CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Flower Detection</h1>
+        <form class="upload-form" method="POST" enctype="multipart/form-data"> <!-- Formulir untuk upload file -->
+            <label for="file">Select an image to upload:</label> <!-- Label untuk input file -->
+            <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required> <!-- Input file -->
+            <br>
+            <input type="submit" value="Upload Image"> <!-- Tombol submit -->
+        </form>
+    </div>
+</body>
+</html>
